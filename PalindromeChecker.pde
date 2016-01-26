@@ -14,9 +14,25 @@ public void setup()
     }
   }
 }
+public String reverse (Stirng word)
+{
+  String s= new String();
+  int diff = word.length()-1;
+  for(int i=diff; i>=0; i--)
+    s=s+word.substring(i, i+1);
+  return s;
+}
+
 public boolean palindrome(String word)
 {
-  //your code here
+  
+  if(reverse(s).equals("word"))
+    return true;
+  else
   return false;
+  /*{if(word.substring(i, i+1).equals(word.substring(word.length()-i, word.length())))
+    return true;}
+  //your code here
+  return false;*/
 }
 
